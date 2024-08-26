@@ -1,9 +1,9 @@
-import React from "react";
+import React,{useRef} from "react";
 
 function Modal({ children, showModal, setShowModal }) {
   const modalRef = useRef;
   const closeModal = (e) => {
-    if (e.target == modalRef.current) {
+    if (e.target == useRef.current) {
       setShowModal(false);
     }
   };
