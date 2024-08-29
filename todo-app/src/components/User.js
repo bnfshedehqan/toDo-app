@@ -6,7 +6,7 @@ const User = () => {
       <h4>TODO</h4>
     </div>
     <div className="info">
-      <p>Code Explained</p>
+      <p>Planner</p>
       <a href="#">Logout!</a>
     </div>
   </div>;
