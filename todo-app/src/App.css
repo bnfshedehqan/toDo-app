@@ -151,6 +151,7 @@ body {
 }
 .AddNewTodo form .pick-project .projects{
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem 1rem 0 1rem;
 }
 .AddNewTodo form .pick-project .project{
@@ -158,5 +159,15 @@ body {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  cursor: pointer;
+}
+.AddNewTodo form .pick-project .projects .active{
+  background: #0080ff;
+  color: whitesmoke;
+}
+.AddNewTodo form .cancel{
+  top: 0;
+  right: 5px;
+  position: absolute;
   cursor: pointer;
 }
