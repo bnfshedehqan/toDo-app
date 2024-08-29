@@ -81,7 +81,7 @@ body {
   position: absolute;
   top: 25%;
   /* left:  25%; */
-  transform: translate(50%,-25%);
+  transform: translate(50%, -25%);
   background: rgba(255, 255, 255, 0.6);
 }
 /* AddNewTodo */
@@ -109,65 +109,81 @@ body {
   transition: all 300ms ease;
 }
 /* AddNewTodo form*/
-.AddNewTodo form{
-  padding: 1rem;
+.AddNewTodo form {
+  padding: 1rem 1rem calc(1rem + 40px) 1rem;
   width: 500px;
   background-color: white;
   color: #000;
   border-radius: 4px;
 }
-.AddNewTodo form .text input{
+.AddNewTodo form .text input {
   padding: 1rem;
   width: 100%;
   margin-bottom: 0.5rem;
   border: none;
   font-size: 1.2rem;
 }
-.AddNewTodo form .text input:focus{
+.AddNewTodo form .text input:focus {
   outline: none;
   border-bottom: 1px solid #0080ff;
 }
-.AddNewTodo form .remind{
+.AddNewTodo form .remind {
   display: flex;
   align-items: center;
   padding: 0.5rem;
 }
-.AddNewTodo form p{
+.AddNewTodo form p {
   margin-left: 10px;
 }
-.AddNewTodo form .title{
+.AddNewTodo form .title {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
 }
-.AddNewTodo from .pick-day{
+.AddNewTodo from .pick-day {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
-.AddNewTodo form .pick-time{
+.AddNewTodo form .pick-time {
   padding: 1rem;
 }
-.AddNewTodo form .pick-project{
+.AddNewTodo form .pick-project {
   padding: 0.5rem;
 }
-.AddNewTodo form .pick-project .projects{
+.AddNewTodo form .pick-project .projects {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 1rem 0 1rem;
 }
-.AddNewTodo form .pick-project .project{
+.AddNewTodo form .pick-project .project {
   border: 1px solid #0080ff;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
   cursor: pointer;
 }
-.AddNewTodo form .pick-project .projects .active{
+.AddNewTodo form .pick-project .projects .active {
   background: #0080ff;
   color: whitesmoke;
 }
-.AddNewTodo form .cancel{
+.AddNewTodo form .cancel {
   top: 0;
   right: 5px;
   position: absolute;
+  cursor: pointer;
+}
+.AddNewTodo form .confirm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.AddNewTodo form .confirm button {
+  width: 100%;
+  height: 40px;
+  background: #0080ff;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0 0 4px 4px;
   cursor: pointer;
 }
