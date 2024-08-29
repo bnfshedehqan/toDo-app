@@ -112,8 +112,7 @@ body {
 .AddNewTodo form{
   padding: 1rem;
   width: 500px;
-  backdrop-filter: blur(80px);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: white;
   color: #000;
   border-radius: 4px;
 }
@@ -150,7 +149,14 @@ body {
 .AddNewTodo form .pick-project{
   padding: 0.5rem;
 }
-.AddNewTodo form .pick-project .project{
+.AddNewTodo form .pick-project .projects{
   display: flex;
   padding: 1rem 1rem 0 1rem;
+}
+.AddNewTodo form .pick-project .project{
+  border: 1px solid #0080ff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
