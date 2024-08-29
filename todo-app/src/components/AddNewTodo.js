@@ -61,7 +61,7 @@ function AddNewTodo() {
                 <Palette />
                 <p>Choose a project</p>
               </div>
-              <div className="project">
+              <div className="projects">
                 <div className="project active">personal</div>
                 <div className="project">work</div>
               </div>
