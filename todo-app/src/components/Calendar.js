@@ -2,13 +2,13 @@ import React from "react";
 import { CalendarDate, CaretUp } from "react-bootstrap-icons";
 import { calendarItems } from "../constants/index";
 
-function Calender() {
+function Calendar() {
   return (
-    <div className="Calender">
+    <div className="Calendar">
       <div className="header">
         <div className="title">
           <CalendarDate size={18} />
-          <p>Calender</p>
+          <p>Calendar</p>
         </div>
         <div className="btns">
           <span>
@@ -27,4 +27,4 @@ function Calender() {
   );
 }
 
-export default Calender;
+export default Calendar;
