@@ -310,8 +310,10 @@ body {
   transition: background 300ms ease-in-out;
 }
 .Project .btns .edit-delete span.edit:hover {
-  background: #acecff;
+  color: #acffac;
+  background: rgba(255, 255, 255, 0.2);
 }
 .Project .btns .edit-delete span.delete:hover {
-  background: #ffacac;
+  color: #ffacac;
+  background: rgba(255, 255, 255, 0.2);
 }
