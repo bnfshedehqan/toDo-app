@@ -189,25 +189,25 @@ body {
   cursor: pointer;
 }
 /* calendar */
-.Calendar{
+.Calendar {
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.Calendar .header{
+.Calendar .header {
   display: flex;
   align-items: center;
 }
-.Calendar .header .title{
+.Calendar .header .title {
   display: flex;
   align-items: center;
   flex: 1px;
 }
-.Calendar .header .title p{
+.Calendar .header .title p {
   margin-left: 5px;
   font-size: 1.1rem;
   font-weight: bold;
 }
-.Calendar .header .btns span{
+.Calendar .header .btns span {
   border-radius: 50%;
   cursor: pointer;
   width: 25px;
@@ -216,16 +216,35 @@ body {
   align-items: center;
   justify-content: center;
 }
-.Calendar .header .btns span:hover{
+.Calendar .header .btns span:hover {
   background-color: rgba(255, 255, 255, 0.6);
   transition: all 300ms ease-in-out;
 }
-.Calendar .items{
+.Calendar .items {
   padding: 0.5rem;
 }
-.Calendar .items .item{
-  padding: .25rem;
+.Calendar .items .item {
+  padding: 0.25rem;
   margin: 5px;
   font-size: 1rem;
   cursor: pointer;
+}
+/* projects */
+.Projects {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.Projects .header{
+  display: flex;
+  align-items: center;
+}
+.Projects .header .title{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.Projects .header .title p{
+  margin-left: 5px;
+  font-size: 1.1rem;
+  
 }
