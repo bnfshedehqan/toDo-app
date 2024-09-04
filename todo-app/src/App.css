@@ -70,6 +70,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.8);
+  z-index: 99;
 }
 .Modal .container {
   position: absolute;
@@ -318,6 +319,50 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 /* AddNewProject */
-.AddNewProject{
+.AddNewProject .add-button span {
   margin-right: 5px;
+}
+/* ProjectForm */
+.ProjectForm {
+  background-color: whitesmoke;
+  color: #000;
+  padding: 1rem;
+  border-radius: 4px;
+  position: relative;
+  padding-bottom: 40px;
+}
+.ProjectForm input {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  font-size: 1.2rem;
+}
+.ProjectForm input:focus {
+  outline: none;
+  border-bottom: 1px solid #0080ff;
+}
+.ProjectForm button {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 50%;
+  border: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 300ms ease-in-out;
+}
+.ProjectForm button.cancel {
+  left: 0;
+  background-color: #bebebe;
+}
+.ProjectForm button.confirm {
+  right: 0;
+  background-color: #0080ff;
+}
+.ProjectForm button:hover {
+  filter: brightness(1.1);
 }
