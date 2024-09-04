@@ -317,3 +317,7 @@ body {
   color: #ffacac;
   background: rgba(255, 255, 255, 0.2);
 }
+/* AddNewProject */
+.AddNewProject{
+  margin-right: 5px;
+}

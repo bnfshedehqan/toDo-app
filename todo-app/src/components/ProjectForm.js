@@ -9,7 +9,7 @@ const ProjectForm = ({
   confirmButtonText,
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="ProjectForm">
       <h3>{heading}</h3>
       <input
         value={value}
