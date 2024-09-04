@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import Project from "./Project";
-import AddNewProject from "./AddNewProject";
 import { CaretUp, Palette, PencilFill } from "react-bootstrap-icons";
+import AddNewProject from "./AddNewProject";
+import Project from "./Project";
 
-const Projects = () => {
+function Projects() {
   const [showMenu, setShowMenu] = useState(true);
   const [edit, setEdit] = useState(false);
-  const pencilColor = edit ? "#1EC94C" : "#ffffff";
+  const pencilColor = edit ? "#1EC94C" : "#000000";
+
   const projects = [
-    { id: 1, name: "personal", numOfTodo: 0 },
-    { id: 2, name: "work", numOfTodo: 1 },
-    { id: 3, name: "other", numOfTodo: 2 },
+    { id: 1, name: "personal", numOfTodos: 0 },
+    { id: 2, name: "work", numOfTodos: 1 },
+    { id: 3, name: "other", numOfTodos: 2 },
   ];
 
   return (
@@ -23,28 +24,22 @@ const Projects = () => {
         <div className="btns">
           {showMenu && projects.length > 0 && (
             <span className="edit" onClick={() => setEdit((edit) => !edit)}>
-              <PencilFill size={15} color={pencilColor}/>
+              <PencilFill size="15" color={pencilColor} />
             </span>
           )}
           <AddNewProject />
           <span className="arrow">
-            <CaretUp size={20} />
+            <CaretUp size="20" />
           </span>
-          <div className="items">
-            {
-              projects.map(project=>
-                <Project 
-                project={project}
-                key={project.id}
-                edit={edit}
-                />
-              )
-            }
-          </div>
         </div>
+      </div>
+      <div className="items">
+        {projects.map((project) => (
+          <Project project={project} key={project.id} edit={edit} />
+        ))}
       </div>
     </div>
   );
-};
+}
 
 export default Projects;
