@@ -1,14 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "sans-serif";
+  font-family: "Ubuntu", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: url("./images/richard.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,14 +21,10 @@ body {
 
 /* Sidebar */
 .Sidebar {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(70px);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   color: whitesmoke;
   border-radius: 10px;
-  padding: 30px 40px;
-
   width: 300px;
   min-width: 210px;
   height: 100%;
