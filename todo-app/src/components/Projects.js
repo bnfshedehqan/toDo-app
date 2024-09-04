@@ -6,7 +6,7 @@ import Project from "./Project";
 function Projects() {
   const [showMenu, setShowMenu] = useState(true);
   const [edit, setEdit] = useState(false);
-  const pencilColor = edit ? "#1EC94C" : "#000000";
+  const pencilColor = edit ? "#acecff" : "#000000";
 
   const projects = [
     { id: 1, name: "personal", numOfTodos: 0 },
