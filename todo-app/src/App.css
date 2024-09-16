@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: space-around;
   color: whitesmoke;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
